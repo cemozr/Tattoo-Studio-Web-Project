@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+#main-content {
+  background-image: url("/images/istockphoto-932263998-612x612.jpg");
+  background-color: #334756;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.tattoo-pic {
+  flex-grow: 1;
+  overflow: hidden;
+}
+.pic {
+  max-width: 300px;
+  margin: 10px;
+  transition: transform 0.3s ease-out;
+  box-shadow: 1px 1px 10px 5px #ff4c29;
+}
+.pic:hover {
+  transform: scale(1.1);
+}
+.text {
+  font-family: "Roboto", sans-serif;
+  color: #dee4e9;
+  text-align: center;
+}
+@media (max-width: 575.98px) {
+  .tattoo-pic {
+    display: flex;
+    justify-content: center;
+  }
+}
